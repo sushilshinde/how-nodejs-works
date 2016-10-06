@@ -27,7 +27,8 @@ Emiter.prototype.fire = function(e){
     if(callabacks){
         //execute all handlers 
         callabacks.forEach(function(callback){
-            callback();
+            callback.call(this); // use callback.call/callback.apply for context
+                console.log(this.test)
         })      
     }
 }
