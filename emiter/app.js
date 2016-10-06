@@ -7,7 +7,7 @@ loadListener.on('beforeLoad',function(){
 });
 
 loadListener.on('afterLoad',function(){
-    console.log("AFTER before load - data");
+    console.log("AFTER  load - data");
 });
 
 loadListener.fire('beforeLoad');
