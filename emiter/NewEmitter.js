@@ -21,6 +21,11 @@ NewEE.prototype.fire = function(name) {
     this.emit(name)
 }
 
+module.exports = NewEE;
+
+/*
+// Usage : 
+
 var ee = new NewEE()
 
 ee.on('data',function(){
@@ -29,3 +34,4 @@ ee.on('data',function(){
 
 //calls wrapper method added to subclass 
 ee.fire('data')
+*/
