@@ -17,9 +17,15 @@ Emiter.prototype.on = function(e,callback){
     eventQueue[e].push(callback);
 }
 
+/*
+    magic fire definition :)
+    @e string   name of the event that is fired    
+*/
 Emiter.prototype.fire = function(e){
-    var callabacks = eventQueue[e];
+    //arry of the all the event hanlders for event named e
+    var callabacks = eventQueue[e];    
     if(callabacks){
+        //execute all handlers 
         callabacks.forEach(function(callback){
             callback();
         })      
