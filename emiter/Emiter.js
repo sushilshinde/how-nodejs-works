@@ -8,10 +8,10 @@ function Emiter() {}
 //Keeping queue private 
 var eventQueue = {};
 
-/*
-    Register event
-    @e          string      event name 
-    @callback   Function    callback function when the event is fired(jquery,extjs)/emited(nodejs)/digest(anuglarjs)
+/**
+* Register event
+* @param {String} eevent name 
+* @param {Function} callback  callback-function when the event is fired(jquery,extjs)/emited(nodejs)/digest(anuglarjs)
 */
 Emiter.prototype.on = function(e,callback){
     //should not create new handler array for 
