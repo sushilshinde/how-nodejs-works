@@ -10,7 +10,7 @@ var eventQueue = {};
 
 /**
 * Register event
-* @param {String} eevent name 
+* @param {String} e event-name 
 * @param {Function} callback  callback-function when the event is fired(jquery,extjs)/emited(nodejs)/digest(anuglarjs)
 */
 Emiter.prototype.on = function(e,callback){
