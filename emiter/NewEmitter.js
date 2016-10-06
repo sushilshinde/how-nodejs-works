@@ -1,6 +1,7 @@
 /**
-*   Example : extending nodejs core module to augment features
-*/  @author sushilshinde.com
+* Example : extending nodejs core module to augment features
+* @author sushilshinde.com
+*/  
 
 var EE = require('events') // event emitter
 var UTIL = require('util')
