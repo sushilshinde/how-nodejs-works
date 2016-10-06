@@ -1,6 +1,7 @@
 /**
-*   Malnurished version of nodejs Event Emitter :)
-*/  @author sushilshinde.com
+* Malnurished version of nodejs Event Emitter :)
+* @author sushilshinde.com
+*/  
 
 //exposiing constuctor as API
 function Emiter() {}
