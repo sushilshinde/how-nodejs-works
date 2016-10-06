@@ -19,7 +19,7 @@ UTIL.inherits(NewEE,EE);
 */
 NewEE.prototype.fire = function(name) {
     //call super emit
-    this.emit(name)
+    this.emit(name)// or this.emit(name,someObject), someObejct will be passed to callback function call+
 }
 
 module.exports = NewEE;
