@@ -1,3 +1,7 @@
+/**
+*   Malnurished version of nodejs Event Emitter :)
+*/  @author sushilshinde.com
+
 //exposiing constuctor as API
 function Emiter() {}
 
@@ -17,18 +21,19 @@ Emiter.prototype.on = function(e,callback){
     eventQueue[e].push(callback);
 }
 
-/*
-    magic fire definition :) It's emit in nodejs but I like name fire
-    @e string   name of the event that is fired    
+/**
+* It's emit in nodejs but I like name fire
+* @param {string} e event identifier
 */
 Emiter.prototype.fire = function(e){
-    //arry of the all the event hanlders for event named e
+    //array of the all the event hanlders for event named e
     var callabacks = eventQueue[e];    
     if(callabacks){
         //execute all handlers 
         callabacks.forEach(function(callback){
-            callback.call(this); // use callback.call/callback.apply for context
-                console.log(this.test)
+            //use callback.call/callback.apply for context
+            //send value to callback using call
+            callback.call(this,{allIsWell:true}); 
         })      
     }
 }
