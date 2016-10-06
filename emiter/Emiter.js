@@ -18,7 +18,7 @@ Emiter.prototype.on = function(e,callback){
 }
 
 /*
-    magic fire definition :)
+    magic fire definition :) It's emit in nodejs but I like name fire
     @e string   name of the event that is fired    
 */
 Emiter.prototype.fire = function(e){
